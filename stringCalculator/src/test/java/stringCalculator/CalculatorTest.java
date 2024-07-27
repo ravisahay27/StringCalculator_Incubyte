@@ -20,5 +20,10 @@ public class CalculatorTest {
 	 public void testAddtwonumbers() {
 		 assertEquals(3, Calculator.Add("1,2"));
 	 }
+	 
+	 @Test
+	 public void testAddmultiplenumbers() {
+		 assertEquals(4, Calculator.Add("1,2,1"));
+	 }
 
 }
