@@ -10,5 +10,10 @@ public class CalculatorTest {
 	    public void testAddEmptyString() {
 	        assertEquals(0,Calculator.Add(""));
 	    }
+	 
+	 @Test
+	 public void testAddnumbers() {
+		 assertEquals(1, Calculator.Add("1"));
+	 }
 
 }

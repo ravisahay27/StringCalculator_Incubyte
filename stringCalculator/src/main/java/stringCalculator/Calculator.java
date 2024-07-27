@@ -12,8 +12,8 @@ public class Calculator {
 		   if (numbers.isEmpty()) {
 	            return 0;
 	        }
-		   return 0;
-	       
+		   
+		  return 0;	       
 	}
 
 }
