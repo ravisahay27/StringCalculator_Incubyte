@@ -47,5 +47,11 @@ public class CalculatorTest {
 	            assertEquals("Negatives not allowed: [-2]", e.getMessage());
 	        }
 	    }
+	  
+	  @Test
+	    public void testAddWithNumbersGreaterThan1000() {
+	        assertEquals(2, Calculator.Add("2,1001"));
+	        assertEquals(1002, Calculator.Add("1000,1001,2"));
+	    }
 
 }

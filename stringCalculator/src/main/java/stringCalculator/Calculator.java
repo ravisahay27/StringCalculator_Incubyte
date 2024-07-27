@@ -44,7 +44,7 @@ public class Calculator {
 	        	
 	        	 if (number < 0) {
 	                 negativeNumbers.add(number);
-	             } else {
+	             } else  {
 	                 sum += number;
 	             }
 	            
