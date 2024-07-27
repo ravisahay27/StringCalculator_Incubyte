@@ -1,6 +1,7 @@
 package stringCalculator;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
 
@@ -36,5 +37,15 @@ public class CalculatorTest {
 	 public void testdiffrentDelimeter() {
 		 assertEquals(3, Calculator.Add("//;\n1;2"));
 	 }
+	 
+	  @Test
+	    public void testAddWithNegativeNumbers() {
+	        try {
+	            Calculator.Add("1,-2,3");
+	            fail("Exception expected for negative numbers");
+	        } catch (IllegalArgumentException e) {
+	            assertEquals("Negatives not allowed: [-2]", e.getMessage());
+	        }
+	    }
 
 }
