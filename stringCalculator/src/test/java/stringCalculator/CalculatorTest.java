@@ -25,5 +25,11 @@ public class CalculatorTest {
 	 public void testAddmultiplenumbers() {
 		 assertEquals(4, Calculator.Add("1,2,1"));
 	 }
+	 
+	 @Test
+	 public void testnewLineDelimeter() {
+		 
+		 assertEquals(6,Calculator.Add("1\n2,3"));
+	 }
 
 }
