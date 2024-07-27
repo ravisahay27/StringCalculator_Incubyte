@@ -42,7 +42,7 @@ public class CalculatorTest {
 	    public void testAddWithNegativeNumbers() {
 	        try {
 	            Calculator.Add("1,-2,3");
-	            fail("Exception expected for negative numbers");
+	            fail("Exception expected for negative numbers ");
 	        } catch (IllegalArgumentException e) {
 	            assertEquals("Negatives not allowed: [-2]", e.getMessage());
 	        }
