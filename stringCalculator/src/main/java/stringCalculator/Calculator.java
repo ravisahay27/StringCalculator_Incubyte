@@ -44,7 +44,7 @@ public class Calculator {
 	        	
 	        	 if (number < 0) {
 	                 negativeNumbers.add(number);
-	             } else  {
+	             } else if(number <= 1000) { //greater than 1000
 	                 sum += number;
 	             }
 	            
