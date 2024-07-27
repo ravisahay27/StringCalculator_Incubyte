@@ -13,9 +13,22 @@ public class Calculator {
 	            return 0;
 	        }
 		   
-		   numbers = numbers.replace("\n", ",");
-		   
-		   String[] numArray = numbers.split(",");
+		   String delimiter = ","; 
+	        String numbersToProcess = numbers;
+
+	        // Check for custom delimiter at the start of the string
+	        if (numbers.startsWith("//")) {
+	            int delimiterIndex = numbers.indexOf("\n");
+	            delimiter = numbers.substring(2, delimiterIndex); 
+	            numbersToProcess = numbers.substring(delimiterIndex + 1); 
+	        }
+
+	       
+	        numbersToProcess = numbersToProcess.replace("\n", delimiter);
+
+	        // Split the numbers string by the delimiter
+	        String[] numArray = numbersToProcess.split(delimiter);
+	        
 	        int sum = 0;
 
 	        for (String num : numArray) {
