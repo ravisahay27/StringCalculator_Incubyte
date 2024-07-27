@@ -8,7 +8,7 @@ public class CalculatorTest {
 	
 	 @Test
 	    public void testAddEmptyString() {
-	        assertEquals(0,Calculator.Add(null));
+	        assertEquals(0,Calculator.Add(""));
 	    }
 
 }

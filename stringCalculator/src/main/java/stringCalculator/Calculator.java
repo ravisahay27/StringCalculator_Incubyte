@@ -7,9 +7,13 @@ public class Calculator {
 
 	}
 
-	public static Object Add(String string) {
+	public static Object Add(String numbers) {
 		// TODO Auto-generated method stub
-		return null;
+		   if (numbers.isEmpty()) {
+	            return 0;
+	        }
+		   return 0;
+	       
 	}
 
 }
