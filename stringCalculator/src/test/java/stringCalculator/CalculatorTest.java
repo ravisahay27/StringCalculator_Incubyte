@@ -31,5 +31,10 @@ public class CalculatorTest {
 		 
 		 assertEquals(6,Calculator.Add("1\n2,3"));
 	 }
+	 
+	 @Test
+	 public void testdiffrentDelimeter() {
+		 assertEquals(3, Calculator.Add("//;\n1;2"));
+	 }
 
 }
