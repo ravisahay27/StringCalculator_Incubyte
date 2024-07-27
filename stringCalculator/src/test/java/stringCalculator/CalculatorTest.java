@@ -15,5 +15,10 @@ public class CalculatorTest {
 	 public void testAddnumbers() {
 		 assertEquals(1, Calculator.Add("1"));
 	 }
+	 
+	 @Test
+	 public void testAddtwonumbers() {
+		 assertEquals(3, Calculator.Add("1,2"));
+	 }
 
 }
