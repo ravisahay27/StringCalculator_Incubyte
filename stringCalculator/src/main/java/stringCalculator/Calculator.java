@@ -13,6 +13,8 @@ public class Calculator {
 	            return 0;
 	        }
 		   
+		   numbers = numbers.replace("\n", ",");
+		   
 		   String[] numArray = numbers.split(",");
 	        int sum = 0;
 
