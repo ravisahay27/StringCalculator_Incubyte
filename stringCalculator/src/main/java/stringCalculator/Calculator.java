@@ -7,4 +7,9 @@ public class Calculator {
 
 	}
 
+	public static Object Add(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
